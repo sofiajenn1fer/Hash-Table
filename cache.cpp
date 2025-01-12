@@ -1,9 +1,3 @@
-// CMSC 341 - Fall 2022 - Project 4
-// Name: Sofia Gomes
-// Date: 12/3/2022
-// Section: 01
-// Email: sgomes2@umbc.edu
-// Description: Contains Cache.h class functions implemented as well as helper functions
 #include "cache.h"
 
 // Cache object constructor, initializes all old variables to 0/nullptr, makes the currenttable and sets all other

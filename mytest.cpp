@@ -1,9 +1,3 @@
-// CMSC 341 - Fall 2022 - Project 4
-// Name: Sofia Gomes
-// Date: 12/3/2022
-// Section: 01
-// Email: sgomes2@umbc.edu
-// Description: Tests all function of Cache class to see if they are working properly using Test class. Implements functions
 #include "cache.h"
 #include <random>
 #include <vector>

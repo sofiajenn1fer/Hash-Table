@@ -1,17 +1,9 @@
-// CMSC 341 - Fall 2022 - Project 4
-// Name: Sofia Gomes
-// Date: 12/3/2022
-// Section: 01
-// Email: sgomes2@umbc.edu
-// Description: Cache header file which contains Cache functions and private members (helper functions) as well as
-// node and person functions and private members
 #ifndef CACHE_H
 #define CACHE_H
 #include <iostream>
 #include <string>
 #include "math.h"
 using namespace std;
-class Grader;   // forward declaration, will be used for grdaing
 class Tester;   // forward declaration, will be used for testing
 class Person;   // forward declaration
 class Cache;    // forward declaration
@@ -25,7 +17,6 @@ const int MAXPRIME = 99991; // Max size for hash table
 typedef unsigned int (*hash_fn)(string); // declaration of hash function
 class Person{
 public:
-    friend class Grader;
     friend class Tester;
     friend class Cache;
     Person(string key="", int id=0){m_key = key; m_id = id;}
@@ -51,7 +42,6 @@ private:
 
 class Cache{
 public:
-    friend class Grader;
     friend class Tester;
     Cache(int size, hash_fn hash);
     ~Cache();
